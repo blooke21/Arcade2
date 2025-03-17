@@ -1,6 +1,7 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { useEffect, useState } from 'react';
+import FileMover from './FileMover';
 
 function Hello() {
   fetch('http://localhost:8080/api/hello')
@@ -29,7 +30,8 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Hello />} />
+        {/* <Route path="/" element={<Hello />} /> */}
+        <Route path="/" element={<FileMover />} />
       </Routes>
     </Router>
   );

@@ -25,7 +25,7 @@ public class MyController {
     @Autowired
     private FileMover fileMover;
 
-    @PostMapping("/addFile")
+    @PostMapping("/add-file")
     public void addFile(@RequestBody Map<String, String> request) {
         String sourcePath = request.get("sourcePath");
 
